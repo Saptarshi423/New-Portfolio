@@ -16,7 +16,7 @@ const Home = () => {
           </h1>
           <p className="desc">
             A <b>Software Engineer</b> and <b>Web Developer</b>.<br />
-            I specialize in UI/UX Design, Responsive Web Apps,<br />
+            I specialize in FullStack development, Responsive Web Apps,<br />
             and scalable system development.
           </p>
           <form className="home-form" onSubmit={e => e.preventDefault()}>
