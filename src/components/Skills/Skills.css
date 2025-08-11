@@ -1,0 +1,85 @@
+.skills-section {
+  min-height: 80vh;
+  background: #fff;
+  padding: 0 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-title {
+  font-family: 'Montserrat', monospace;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #222;
+  margin-top: 32px;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.skills-desc {
+  font-family: 'Montserrat', monospace;
+  font-size: 1.18rem;
+  color: #444;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  max-width: 900px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem 3.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  margin-bottom: 1.5rem;
+}
+
+.skill-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(44,44,56,0.08);
+  margin-bottom: 0.7rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.08) rotate(-4deg);
+  box-shadow: 0 6px 24px rgba(108,99,255,0.13);
+}
+
+.skill-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15rem;
+  color: #222;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    gap: 1.5rem 1.5rem;
+  }
+  .skill-card {
+    min-width: 90px;
+  }
+  .skill-icon {
+    width: 48px;
+    height: 48px;
+  }
+}

@@ -1,0 +1,131 @@
+.about-section {
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 40px 0; */
+}
+
+.about-inner {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(44,44,56,0.08);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1500px;
+  width: 95%;
+  padding: 60px 48px;
+  gap: 40px;
+  position: relative;
+}
+
+.about-left {
+  flex: 2;
+  min-width: 340px;
+  position: relative;
+  padding-left: 36px; /* space for the progress line */
+}
+
+.about-progress-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 95%;
+  background: linear-gradient(to bottom, #ff2d2d 0%, #ff2d2d 100%);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.about-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.about-contact {
+  font-family: 'Montserrat', monospace;
+  font-size: 1.08rem;
+  color: #444;
+  margin-bottom: 2.2rem;
+}
+
+.about-experience .job {
+  margin-bottom: 2.2rem;
+}
+
+.job h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #222;
+}
+
+.job p {
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.job ul {
+  margin: 0 0 0 1.2rem;
+  padding: 0;
+  font-size: 1rem;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.job ul li {
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+}
+
+.job ul li b {
+  font-weight: 700;
+  color: #222;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+}
+
+.about-img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44,44,56,0.10);
+  background: #f8fafc;
+  height: 100vh;
+  object-fit: contain;
+}
+
+
+
+@media (max-width: 900px) {
+  .about-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 16px;
+    gap: 32px;
+  }
+  .about-right {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .about-img {
+    max-width: 220px;
+    height: auto;
+  }
+}

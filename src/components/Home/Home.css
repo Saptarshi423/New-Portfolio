@@ -1,0 +1,135 @@
+.home-outer {
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 40px 0; */
+}
+
+.home-inner {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(44,44,56,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  width: 95%;
+  padding: 60px 48px;
+  gap: 40px;
+  position: relative;
+}
+
+.home-left {
+  flex: 1.2;
+  min-width: 320px;
+}
+
+.home-left h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #222;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.accent {
+  color: #6c63ff;
+  font-weight: 900;
+  font-size: 2.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.accent-icon {
+  background: #6c63ff;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.2em 0.4em;
+  margin-right: 0.3em;
+  display: inline-block;
+}
+
+.desc {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 16px;
+}
+
+.email-input {
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 2rem;
+  font-size: 1rem;
+  outline: none;
+  background: #f8fafc;
+  transition: border 0.2s;
+  min-width: 180px;
+}
+
+.email-input:focus {
+  border: 1.5px solid #6c63ff;
+}
+
+.connect-btn {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(108,99,255,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.connect-btn:hover {
+  background: #5146d8;
+  box-shadow: 0 4px 24px rgba(108,99,255,0.16);
+}
+
+.home-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+}
+
+.hero-img {
+  /* max-width: 320px; */
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44,44,56,0.10);
+  background: #f8fafc;
+  height: 450px;
+}
+
+@media (max-width: 900px) {
+  .home-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 16px;
+    gap: 32px;
+  }
+  .home-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  /* .hero-img {
+    max-width: 220px;
+  } */
+}
